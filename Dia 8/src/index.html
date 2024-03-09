@@ -1,0 +1,78 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="pt-br" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="style.css" />
+<title>Calculadora DoDev</title>
+
+<head>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+
+
+        <div class="main">
+          <form action="" name="Calculadorinha">
+            <input type="text" id="visor" class="form-control visor" placeholder="0" disabled="disabled" />
+
+            <div class="row">
+              <button onclick="limpezatotal()" type="button"
+                class="btn btn-dark btn-lg font-weight-light clear">C</button>
+              <button onclick="adicionar('/')" type="button"
+                class="btn btn-dark btn-lg font-weight-light barra">/</button>
+              <button onclick="adicionar('*')" type="button"
+                class="btn btn-dark btn-lg font-weight-light multi">x</button>
+            </div>
+
+            <div class="row">
+              <button onclick="adicionar(7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+              <button onclick="adicionar(8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+              <button onclick="adicionar(9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+              <button onclick="adicionar('-')" type="button"
+                class="btn btn-dark btn-lg font-weight-light menos">-</button>
+            </div>
+
+            <div class="row">
+              <button onclick="adicionar(4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+              <button onclick="adicionar(5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+              <button onclick="adicionar(6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button onclick="adicionar('+')" type="button"
+                class="btn btn-dark btn-lg font-weight-light mais">+</button>
+            </div>
+
+            <div style="display: flex;">
+              <div>
+                <div class="row">
+                  <button onclick="adicionar(1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+                  <button onclick="adicionar(2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+                  <button onclick="adicionar(3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+                  <button onclick="adicionar('e')" type="button"
+                class="btn btn-dark btn-lg font-weight-light exp">e</button>
+                </div>
+
+
+                <div class="row">
+                  <button onclick="adicionar(0)" type="button"
+                    class="btn btn-dark zero btn-lg font-weight-light">0</button>
+                  <button onclick="adicionar('.')" type="button"
+                    class="btn btn-dark btn-lg font-weight-light ponto">.</button>
+                    <button onclick="calcular()" type="button" class="btn btn-dark btn-lg igual">=</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
